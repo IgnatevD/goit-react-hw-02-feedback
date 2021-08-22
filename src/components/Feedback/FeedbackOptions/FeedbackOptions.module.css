@@ -1,0 +1,21 @@
+.container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  color: black;
+  background: white;
+}
