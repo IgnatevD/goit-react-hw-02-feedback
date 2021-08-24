@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Statistics from "../../Statistics/Statistics";
+import Statistics from "../Statistics/Statistics";
 import s from "./FeedbackOptions.module.css";
 
 class FeedbackOptions extends Component {
