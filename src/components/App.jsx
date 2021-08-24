@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
 import Section from "./Section/Section";
 import Notification from "./Notification/Notification";
@@ -56,5 +57,11 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  good: PropTypes.string,
+  neutral: PropTypes.string,
+  bad: PropTypes.string,
+};
 
 export default App;
