@@ -1,5 +1,8 @@
-.container {
-  width: 400px;
+.conteiner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 350px;
   margin: 0 auto;
   text-align: center;
 }
@@ -12,7 +15,6 @@ button {
   background: none;
   color: white;
   cursor: pointer;
-  margin-left: 10px;
 }
 
 button:hover {
