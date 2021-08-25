@@ -1,9 +1,9 @@
 import s from "./Section.module.css";
 
-const Section = ({ titel, children }) => {
+const Section = ({ title, children }) => {
   return (
     <section className={s.sectionConteiner}>
-      <h2>{titel}</h2>
+      <h2>{title}</h2>
       {children}
     </section>
   );

@@ -34,20 +34,22 @@ class App extends Component {
     return (
       <>
         <h1>Отзывы о компании</h1>
-        <Section titel={"Пожалуйста оставте свой отзыв"}>
+        <Section title={"Пожалуйста оставте свой отзыв"}>
           <FeedbackOptions
-            options={["good", "neutral", "bad"]}
+            options={Object.keys(this.state)}
             plusFeedback={this.plusFeedback}
           />
         </Section>
-        <Section titel={"Пожалуйста оставте свой отзыв"}>
+        <Section title={"Статистика отзывов"}>
           {this.total() ? (
             <Statistics
               good={good}
               neutral={neutral}
               bad={bad}
               total={this.total()}
-              positivePercentage={this.positivePercentage()}
+              positivePercentage={`${Number.parseInt(
+                this.positivePercentage()
+              )} %`}
             />
           ) : (
             <Notification message={"Нет отзывов о компании"} />
